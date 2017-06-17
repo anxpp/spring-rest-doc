@@ -1,0 +1,176 @@
+= Spring REST Docs API 文档 Demo
+作者 <master@anxpp.com>
+v1.0, 2017-06-15
+:toc: left
+:toclevels: 3
+:toc-title: 目  录
+:doctype: book
+:icons: font
+:operation-curl-request-title: Curl 请求
+:operation-httpie-request-title: HTTPie 请求
+:operation-http-request-title: Http 请求
+:operation-request-parameters-title: 请求参数说明
+:operation-request-fields-title: 请求参数说明
+:operation-http-response-title: Http 响应
+:operation-response-fields-title: Http 响应字段说明
+:operation-links-title: 相关链接
+
+[[overview]]
+== 1、概要
+本文为API说明文档。
+
+API 分两部分，一部分为完全的 RESTFul 风格的 API ，另一部分为普通的 API
+
+API的说明包括：请求方式、请求地址、请求参数说明和响应消息等。
+
+[[overview-response]]
+== 2、通用说明
+
+*非 RESTFul API 通用响应消息说明*
+
+|===
+| 字段 | 类型 | 解释
+
+| state
+| int
+| 1为成功，0为失败，其他为自定义状态
+
+| data
+| Object
+| 请求的数据
+
+| msg
+| String
+| 响应附带的消息
+|===
+
+[[resources-restful]]
+== 3、RESTFul API
+
+[[resources-restful-index]]
+=== 3.1、Root (/restful)
+
+RESTFul 根接口
+
+[[resources-restful-index-profile]]
+==== 3.1.1、接口信息描述
+
+operation::restful-profile[snippets='curl-request,httpie-request,http-request,http-response,response-fields,links']
+
+[[resources-restful-index-index]]
+==== 3.1.2、Index
+
+operation::restful-index[snippets='curl-request,httpie-request,http-request,http-response,response-fields,links']
+
+[[resources-restful-user]]
+=== 3.2、User
+
+[[resources-restful-user-profile]]
+==== 3.2.1、User 接口信息描述
+
+operation::restful-user-profile[snippets='curl-request,httpie-request,http-request,http-response,response-fields']
+
+[[resources-restful-user-index]]
+==== 3.2.2、User 列表
+
+operation::restful-user-list[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields,links']
+
+[[resources-restful-user-add]]
+==== 3.2.3、User 添加
+
+operation::restful-user-add[snippets='curl-request,httpie-request,http-request,request-fields,http-response']
+
+[[resources-restful-user-update]]
+==== 3.2.4、User 更新
+
+operation::restful-user-update[snippets='curl-request,httpie-request,http-request,request-fields,http-response']
+
+[[resources-restful-user-find-sex]]
+==== 3.2.5、User 性别查找
+
+operation::restful-user-find-sex[snippets='curl-request,httpie-request,http-request,request-parameters,http-response']
+
+[[resources-restful-user-find-name]]
+==== 3.2.6、User 姓名查找（支持模糊查找）
+
+operation::restful-user-find-name[snippets='curl-request,httpie-request,http-request,request-parameters,http-response']
+
+[[resources-restful-user-delete]]
+==== 3.2.7、User 删除
+
+operation::restful-user-delete[snippets='curl-request,httpie-request,http-request,http-response']
+
+[[resources-restful-company]]
+=== 3.3、Company
+
+[[resources-restful-company-profile]]
+==== 3.3.1、Company 接口信息描述
+
+operation::restful-company-profile[snippets='curl-request,httpie-request,http-request,http-response,response-fields']
+
+[[resources-restful-company-index]]
+==== 3.3.2、Company 列表
+
+operation::restful-company-list[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields,links']
+
+[[resources-restful-company-add]]
+==== 3.3.3、Company 添加
+
+operation::restful-company-add[snippets='curl-request,httpie-request,http-request,request-fields,http-response']
+
+[[resources-general]]
+== 4、常规 API
+
+[[resources-user]]
+=== 4.1、User
+
+==== 4.1.1、User相关可用的 API
+
+operation::user-index[snippets='curl-request,httpie-request,http-request,http-response,response-fields']
+
+[[resources-user-add]]
+==== 4.1.2、添加User
+
+用于添加一个User的POST请求
+
+operation::user-add[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields']
+
+[[resources-user-list]]
+==== 4.1.3、获取User列表
+
+获取User列表
+
+operation::user-list[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields']
+
+[[resources-user-find]]
+==== 4.1.4、查找User
+
+查找User
+
+operation::user-find[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields']
+
+
+[[resources-company]]
+=== 4.2、Company
+Company的增删查改。
+
+[[resources-company-add]]
+==== 4.2.1、添加Company
+
+用于添加一个Company的POST请求
+
+operation::company-add[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields']
+
+[[resources-company-list]]
+==== 4.2.2、获取Company列表
+
+获取Company列表
+
+operation::company-list[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields']
+
+[[resources-company-find]]
+==== 4.2.3、查找Company
+
+查找Company
+
+operation::company-find[snippets='curl-request,httpie-request,http-request,request-parameters,http-response,response-fields']

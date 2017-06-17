@@ -1,0 +1,10 @@
+
+
+
+server:
+  port: 9999
+
+spring:
+  jackson:
+    serialization:
+      indent_output: true
