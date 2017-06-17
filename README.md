@@ -447,13 +447,13 @@ Asciidoctor 其实跟 MarkDown 挺像的，表达能力也比较强，但使用�
 
 ## Demo 源码
 
- - GitHub 地址：[GitHub][3]
+ - GitHub 地址：[https://github.com/anxpp/spring-rest-doc.git][3]
 
  - GitLab 私服：[http://git.anxpp.com/open-source-unclassified-projects/spring-rest-doc-demo.git][4]
 
 [1]: http://math.stackexchange.com/
 [2]: http://asciidoctor.org/docs/user-manual/
-[3]: http://git.anxpp.com/open-source-unclassified-projects/spring-rest-doc-demo.git
+[3]: https://github.com/anxpp/spring-rest-doc.git
 [4]: http://git.anxpp.com/open-source-unclassified-projects/spring-rest-doc-demo.git
 [5]: http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 [6]: http://blog.csdn.net/anxpp/article/details/73330832
