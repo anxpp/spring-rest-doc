@@ -451,7 +451,7 @@ Asciidoctor 其实跟 MarkDown 挺像的，表达能力也比较强，但使用�
 
  - GitLab 私服：[http://git.anxpp.com/open-source-unclassified-projects/spring-rest-doc-demo.git][4]
 
-[1]: http://math.stackexchange.com/
+[1]: http://docs.spring.io/spring-restdocs/docs/1.2.1.RELEASE/reference/html5/
 [2]: http://asciidoctor.org/docs/user-manual/
 [3]: https://github.com/anxpp/spring-rest-doc.git
 [4]: http://git.anxpp.com/open-source-unclassified-projects/spring-rest-doc-demo.git
